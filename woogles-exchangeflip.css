@@ -1,0 +1,12 @@
+@-moz-document url-prefix("https://woogles.io/game") {
+.exchange .rack .tile {
+    transition: 0.1s;
+    position: relative;
+    top: 0;
+    transform: scale(1) perspective(0) rotateX(0);
+}
+.exchange .rack .tile.selected {
+    top: 4px;
+    transform: scale(0.9) perspective(100px) rotateX(55deg);
+}
+}
