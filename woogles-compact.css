@@ -1,0 +1,43 @@
+@-moz-document url("https://woogles.io/") {
+/* Tested on a 24-inch monitor */
+div.chat-area { /* make chat smaller */
+    min-width: 25%;
+    max-width: 25%;
+}
+div.game-lists { /* make game list bigger */
+    min-width: 50%;
+    max-width: 50%;
+}
+div.announcements { /* make announcements smaller */
+    min-width: 25%;
+    max-width: 25%;
+}
+div.player-avatar { /* remove avatars */
+    display: none !important;
+}
+.timestamp { /* make message timestamps permanent */
+  visibility: visible !important;
+}
+tr.ant-table-row td {
+  border: 0;
+}
+td.ant-table-cell.players {
+    display: flex !important; /* compress live games into one line */
+    justify-content: space-between !important; /* space out live game info a bit better */
+    width: 100% !important; /* space out player names and ratings */
+}
+td.ant-table-cell.players > div {
+    flex: 0 0 45%; /* space out live game info a bit better */
+}
+div.player-display { /* compress players in friends and lobby lists */
+    display: inline !important;
+}
+p.player-activity {
+    display: inline; /* put friend's name and activity on same line */
+    float: right; /* put friend's activity on the right */
+    padding-right: 10px;
+}
+p.player-name { /* put friend's name and activity on same line */
+    display: inline;
+}
+}
