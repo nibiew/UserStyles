@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1023px) { /*enable once below a certain screen size; adjust to your preferences*/
+    .data-area { /* make data area small enough to fit into screen */
+        min-width: 39% !important;
+        max-width: 39% !important;
+    }
+    .chat-area { /* hide chat */
+        display: none;
+    }
+    .game-table { /* enable use of whole screen */
+        max-width: 100% !important;
+    }
+    .game-controls .secondary-controls {
+        flex-direction: row;
+    }
+
+    .game-controls button.ant-btn.play {
+        order: 3;
+        min-width: unset;
+        width: unset;
+        height: unset;
+    }
+    .game-controls .secondary-controls button {
+        height: unset;
+    }
+}
