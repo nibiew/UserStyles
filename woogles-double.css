@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1023px) { /*enable once below a certain screen size; adjust to your preferences*/
+@media only screen and (max-width: 1023px) and (min-width: 956px) { /*enable once below/above a certain screen size; adjust to your preferences*/
     .data-area { /* make data area small enough to fit into screen */
         min-width: 39% !important;
         max-width: 39% !important;
